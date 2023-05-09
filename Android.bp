@@ -18587,22 +18587,6 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "init.kernel.post_boot-lahaina",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-lahaina.sh",
-    filename: "init.kernel.post_boot-lahaina.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-yupik",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-yupik.sh",
-    filename: "init.kernel.post_boot-yupik.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.kernel.post_boot",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
@@ -18623,14 +18607,6 @@ sh_binary {
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.qti.chg_policy.sh",
     filename: "init.qti.chg_policy.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.qti.kernel.sh",
-    filename: "init.qti.kernel.sh",
     soc_specific: true,
 }
 
