@@ -1,0 +1,5 @@
+dontaudit zygote hal_nfc_hwservice:hwservice_manager find;
+allow zygote system_server:binder { transfer };
+allow zygote servicemanager:binder { call };
+allow zygote system_app:binder { transfer };
+allow zygote system_server:binder { call };

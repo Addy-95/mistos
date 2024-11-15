@@ -1,6 +1,22 @@
+dontaudit rild system_data_root_file:dir write;
+dontaudit rild system_data_root_file:dir add_name;
+dontaudit rild system_data_root_file:file create;
+dontaudit rild system_data_root_file:file open;
+dontaudit rild cache_file:dir search;
+dontaudit rild cache_file:dir getattr;
+dontaudit rild cache_file:dir write;
+dontaudit rild cache_file:dir add_name;
+dontaudit rild cache_file:file open;
+
 allow rild mnt_vendor_file:dir search;
 
 allow rild vendor_proc_display:file r_file_perms;
+
+allow rild cache_file:lnk_file { read };
+
+allow rild cache_file:file { write };
+
+allow rild system_data_root_file:file { write };
 
 r_dir_file(rild, vendor_proc_engineer)
 

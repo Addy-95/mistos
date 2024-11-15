@@ -1,3 +1,15 @@
+dontaudit vendor_qti_init_shell sysfs_devices_block:file { write };
+
 allow vendor_qti_init_shell proc_cmdline:file r_file_perms;
+allow vendor_qti_init_shell sysfs_devices_system_cpu:file { setattr };
+allow vendor_qti_init_shell vendor_sysfs_scsi_host:file { write };
+allow vendor_qti_init_shell sysfs:file { write };
+
+allow vendor_qti_init_shell sysfs_loop:file { write };
+allow vendor_qti_init_shell vendor_data_file:dir { read };
+allow vendor_qti_init_shell vendor_data_file:dir { open };
+allow vendor_qti_init_shell vendor_data_file:dir { write };
+allow vendor_qti_init_shell vendor_data_file:dir { remove_name };
+allow vendor_qti_init_shell vendor_data_file:dir { rmdir };
 
 create_dir_file(vendor_qti_init_shell, mnt_vendor_file)

@@ -1,1 +1,5 @@
+dontaudit kernel mnt_vendor_file:dir search;
+dontaudit kernel mnt_vendor_file:file open;
+dontaudit kernel vendor_persist_wcnss_service_file:dir search;
+
 allow kernel vendor_file:file r_file_perms;

@@ -1,0 +1,4 @@
+dontaudit cameraserver vendor_file:file read;
+dontaudit cameraserver hal_oplus_osense_aidl_service:service_manager find;
+
+get_prop(cameraserver, vendor_display_prop)
