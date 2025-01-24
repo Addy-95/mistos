@@ -30,3 +30,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus9 \
     SystemDevice=OnePlus9 \
     SystemName=OnePlus9
+
+# MistOS Stuffs
+MISTOS_MAINTAINER := Addy
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
